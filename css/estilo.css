@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap');
+
+
+ul {
+    background-color: brown;
+    padding: 12px;
+    list-style: none;
+    margin: 20px auto;
+    text-align: center;
+    word-spacing: 0.5rem;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+ul li {
+    color: aliceblue;
+    display: inline-block;
+    text-align: center;
+    line-height: 2rem;
+    
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+ul li a:hover{
+    color: black;
+}
+
+h1 {
+    text-align: center; 
+    font-size: 4rem;
+    font-family: "Grenze Gotisch", serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+    color: rgb(72, 3, 3);
+
+}
+
+h2 {
+    text-align: center; 
+    text-decoration: underline;
+}
+
+p { 
+    line-height: 1.5rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+body {
+    background: rgb(234,232,232);
+    background: linear-gradient(180deg, rgba(234,232,232,1) 0%, rgba(203,26,26,1) 43%, rgba(121,9,9,1) 78%);
+    font-family: helvetica, sans-serif;
+    font-style: italic;
+
+}
+
+section div {
+    text-align: center;
+    margin: 40px;
+    
+}
+
+section div img{
+    width: 30rem;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+.section2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.section3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.container a{
+    margin: 5px;
+}
+
+
+div h3{
+    text-decoration: underline;
+    
+
+}
+
+#menu {
+    text-align: center;
+    padding-left: 15px;
+}
+
+#menu div h3{
+    text-align: center;
+}
+
+#comidas{
+    text-decoration: none;
+    padding: 1rem;
+    background-color: rgb(108, 4, 4);
+    border-radius: 10px;
+}
+
+#comidas a{
+    text-decoration: none;
+    font-size: 1.2rem;  
+    color: white; 
+}
+
+#comidas a:hover{
+    
+    color: rgba(255, 255, 255, 0.521); 
+}
+
+#contacto {
+    text-align: center;
+    align-items: center;
+}
+
+#reservas {
+    text-align: center;
+    align-items: center;
+}
+
+footer {
+    margin: auto;
+    display: inline-block;
+    }
+
+
+footer h4{
+    font-family: "Grenze Gotisch", serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+    color: rgb(72, 3, 3);
+}
+
+footer div{
+    display: inline-block;
+    
+    
+}
+
+footer div a{
+    display: inline-block;
+    color: white;
+}
+
+footer div a:hover{
+    color: black;
+}
+
+header {
+    margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+.container-menu {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 0.7fr 1.5fr; 
+    grid-template-rows: 0.1fr 1.6fr 1.3fr 1.1fr 1fr fr 0.2fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "header header"
+      "aside main-entradas"
+      "aside main-pastas"
+      "aside main-carnes"
+      "aside main-postres"
+      "aside main-bebidas"
+      "footer footer"; 
+  }
+
+  .container-menu h3{
+    text-align: center;
+    margin: 3%;
+    font-size: 40px;
+  }
+
+  .container-menu img{
+    height: 240px;
+    width: 260px;
+    ;
+    
+  }
+  
+  .header { grid-area: header;
+    
+
+}
+   .header {
+    padding-bottom: 0px;
+    padding: 0px;
+   }
+
+  .aside { grid-area: aside;
+    margin: 100px;
+    padding: 20px;
+    flex-wrap: nowrap;
+    width: 50%;
+    height: 300px;
+    position: sticky;
+    top: 20px;
+
+}
+
+.menuaside ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+
+ .main- {
+  
+    
+    margin-top: 10px;
+    
+ }
+
+  .main-entradas { grid-area: main-entradas;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: space-between;
+     }
+
+  
+  .main-pastas { grid-area: main-pastas;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; }
+  
+  .main-carnes { grid-area: main-carnes; 
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+   
+  
+  .main-postres { grid-area: main-postres; 
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+    justify-content: space-between;
+    gap: 20px;
+}
+  
+  
+
+    .main-bebidas img{
+        height: 700px;
+        width: 800px;
+    }
+  
+  .footer { grid-area: footer;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 60px;
+
+}
+
+.footer a{
+    font-size: 25px;
+}
+
+.footer h3 {
+    font-size: 20px;
+}
+
+.footer h4 {
+    font-size: 20px;
+}
+  
