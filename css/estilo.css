@@ -352,6 +352,17 @@ header {
 
 }
 
+.ubiparrafo{
+    justify-content: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+.mapaubi {
+    padding-top: 15px;
+}
+
 .footer a{
     font-size: 25px;
 }
@@ -363,6 +374,12 @@ header {
 .footer h4 {
     font-size: 20px;
 }
+
+.footer .container {
+    padding: 20px;
+}
+
+
   
 
 
