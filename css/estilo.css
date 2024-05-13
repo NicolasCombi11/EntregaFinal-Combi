@@ -59,7 +59,7 @@ p {
 
 body {
     background: rgb(234,232,232);
-    background: linear-gradient(180deg, rgba(234,232,232,1) 0%, rgba(203,26,26,1) 43%, rgba(121,9,9,1) 78%);
+    background: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
     font-family: helvetica, sans-serif;
     font-style: italic;
 
@@ -78,8 +78,10 @@ section div img{
 .section1 {
     display: flex;
     flex-direction: column;
-
-    
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+    margin-top: 50px;
 }
 
 .section2 {
@@ -88,6 +90,8 @@ section div img{
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
     
 }
 
@@ -97,18 +101,26 @@ section div img{
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 .container a{
-    margin: 5px;
+    margin: 7px;
+    color: wheat;
 }
 
 
 div h3{
     text-decoration: underline;
-    
 
+    color: wheat;
+    
+}
+
+.cajasmenu h3{
+    display: flex;
+    color: rgb(108, 4, 4);
 }
 
 #menu {
@@ -144,13 +156,44 @@ div h3{
 }
 
 #reservas {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     align-items: center;
 }
 
+
+#mainubi {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 50px;
+}
+
+#contacto {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+}
+
+
+.formulario {
+    width: 600px;
+    margin: 20px;
+    border: #e59f44 solid 2px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
 footer {
-    margin: auto;
+    margin: 10px;
     display: inline-block;
+    background-color: rgb(72, 3, 3);
+    
     }
 
 
@@ -158,13 +201,17 @@ footer h4{
     font-family: "Grenze Gotisch", serif;
     font-optical-sizing: auto;
     font-style: italic;
-    color: rgb(72, 3, 3);
+    color: white;
 }
 
 footer div{
     display: inline-block;
     
     
+}
+
+.map{
+    margin: 10px;
 }
 
 footer div a{
@@ -207,6 +254,7 @@ header {
     text-align: center;
     margin: 3%;
     font-size: 40px;
+    
   }
 
   .container-menu img{
@@ -256,6 +304,7 @@ header {
     grid-template-rows: 1fr 1fr 1fr;
     gap: 20px;
     justify-content: space-between;
+    
      }
 
   
@@ -315,3 +364,138 @@ header {
     font-size: 20px;
 }
   
+
+
+@media only screen and (max-width:600px){
+
+    .section1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section1 p {
+        width: 500px;
+    }
+    .section2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section2 p {
+        width: 500px;
+    }
+
+    .section3{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section3 p {
+        width: 500px;
+    }
+
+    .container img{
+        width: 350px;
+        height: 250px;
+    }
+
+    .footer {
+        display: flex;
+        width: 100%;
+        padding: 20px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+        
+        
+    }
+
+    .footer h3 {
+        font-size: small;
+
+    }
+
+    .face{
+        padding-bottom: 15px;
+    }
+    
+    .footer a {
+        font-size: medium;
+    }
+
+    .insta {
+        padding-top: 15px;
+    }
+
+    .footer h4 {
+        font-size: medium;
+        padding: 5px;
+    }
+
+    .inframe {
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+
+    }
+
+
+}
+
+
+@media screen and (max-width:420px){
+
+    ul {
+        margin: 10px;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    ul li {
+        color: aliceblue;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        line-height: 10px;
+        padding-right: 2px;  
+      }
+
+
+    .section1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section1 p {
+        width: 400px;
+    }
+
+    .section2 p {
+        width: 400px;
+    }
+
+    .section3 p {
+        width: 400px;
+    }
+
+    .footer{
+        justify-content: center;
+        margin: 10px;
+        align-items: center;
+        position: relative;
+       }
+
+    .inframe {
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+
+    }   
+
+
+}
