@@ -1,266 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Restaurante Don Quijote, esitlo Italiano en la La Plata, Buenos Aires. Enfocado en la comida gourmet, de calidad y delicioso">
+    <!-- SEO -->
+    <meta name="description" content="Menu del restaurante Don Quijote, las opciones que se pueden encontrar de entradas, platos y bebidas">
     <meta name="Keywords" content="restaurante, la plata, don quijote, restaurante don quijote, gastronomia, eventos, delivery">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="../css/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./multimedia/favicon.png">
+    <link rel="icon" type="image/png" href="../multimedia/favicon.png">
+    <!--dependencias a Javascript imprescindibles para bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Estilo de la pagina -->
+    <link rel="stylesheet" href="../css/estilo.css">
+
     <title>Restaurante Italiano Don Quijote</title>
 </head>
 <body>
     <div class="container-menu">
         <header class="header">
+            <!-- Titulo -->
             <h1 class="animate__animated animate__fadeIn">Don Quijote</h1>
-        <h2 class="animate__animated animate__zoomIn">Ristorante Italiano</h2>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Historia</a></li>
-                <li><a href="./menu.html">Menu</a></li>
-                <li><a href="./ubicacion.html">Ubicacion</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./reservas.html">Reservas</a></li>
-            </ul>
-        </nav>
+            <h2 class="animate__animated animate__zoomIn">Ristorante Italiano</h2>
+            <!-- Barra de navegacion -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary" class="navcolor">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                      <li class="nav-item">
+                        <a class="nav-link "  href="../index.html">Historia </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link "  href="./menu.html">Menu </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./ubicacion.html">Ubicacion </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./reservas.html">Reservas </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </header>
-
-        <div class="aside">
-            <nav class="menuaside">
-                <ul>
-                    <li><a href="#main-entradas">Entradas</a></li>
-                    <li><a href="#main-pastas">Pastas</a></li>
-                    <li><a href="#main-carnes">Carnes</a></li>
-                    <li><td><a href="#main-postres">Postres</a></li>
-                    <li><a href="#main-bebidas">Bebidas</a></li>
-                </ul>
-            </nav>
-        </div>
-
+        
         <main class="cajasmenu">
+            <div class="menucontenedor">
+                <img src="../multimedia/menu1.webp">
+            </div>
 
-            <h3 id="main-entradas">Entradas</h3>
-        <div class="main-entradas" >
+            <div class="menucontenedor">
+                <img src="../multimedia/menu2.webp">
+            </div>
 
+            <div class="menucontenedor">
+                <img src="../multimedia/menu3.webp">
+            </div>
 
-        <div class="contenedor">
-        <figure>
-        <img title="Arranccini" alt="Albondigas de rissotto de hongos rellenas de queso" src="../multimedia/entrada1arrancini.jpg" alt="Entrada1">
-         </figure>
-         <div class="contenido">
-            <h4>Arranccini</h4>
-            <p class="contecomida">Albondigas de rissotto de hongos rellenas de queso</p>
-         </div>
-        </div>
+            <div class="menucontenedor">
+                <img src="../multimedia/menu4.webp">
+            </div>
 
-        <div class="contenedor">
+            <div class="menuencabezado">
+                <img src="../multimedia/cabeceramenu.webp">
+            </div>
+        </main> 
+   <!-- Pie de pagina -->
+   <footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
             <figure>
-        <img title="Provoleta" alt="Provoleta ahumada con pesto casero y pan de masa madre" src="../multimedia/entrada2provoleta.jpg" alt="Entrada2">
-        </figure>
-         <div class="contenido">
-            <h4>Provoleta</h4>
-            <p class="contecomida">Provoleta ahumada con pesto casero y pan de masa madre</p>
-         </div>
+                <a href="#">
+                    <img src="../multimedia/icon1.jpg" alt="Logo de SLee Dw">
+                </a>
+            </figure>
         </div>
-
-        <div class="contenedor">
-            <figure>
-        <img title="Bruschettas" alt="Bruschettas con queso feta, tomates cherry y albahaca" src="../multimedia/entrada3bruschetta.jpg" alt="Entrada3">
-        </figure>
-         <div class="contenido">
-            <h4>Bruschettas</h4>
-            <p class="contecomida">Bruschettas con queso feta, tomates cherry y albahaca</p>
-         </div>
+        <div class="box">
+            <h2>SOBRE NOSOTROS</h2>
+            <p>Somos un restaurante familiar creado por italianos hace 30 años.</p>
+            <p>Queres conocer los sabores tipicos de Italia? Estas en el lugar indicado.</p>
         </div>
-
-        <div class="contenedor">
-            <figure>
-        <img title="Albondigas con salsa de tomate" alt="Albondigas de carne con salsa de tomate" src="../multimedia/entrada4albondigas.jpg" alt="Entrada4">
-        </figure>
-         <div class="contenido">
-            <h4>Albondigas</h4>
-            <p class="contecomida">Albondigas de carne con salsa de tomate</p>
-         </div>
+        <div class="box">
+            <h2>SEGUINOS</h2>
+            <div class="red-social">
+                <a href="https://www.facebook.com/rdonquijote/?locale=es_LA" class="fa-brands fa-facebook"></a>
+                <a href="https://www.instagram.com/rdonquijote/?hl=en" class="fa-brands fa-instagram"></a>
+                <a href="https://twitter.com/rdonquijote?lang=en" class="fa-brands  fa-twitter"></a>
+            </div>
         </div>
-
-        <div class="contenedor">
-            <figure>
-        <img title="Mozarella frita" alt="Bastones de mozarella fritos con salsa pomodoro" src="../multimedia/entrada5mozarella.jpg" alt="Entrada5">
-        </figure>
-         <div class="contenido">
-            <h4>Mozarella frita</h4>
-            <p class="contecomida">Bastones de mozarella fritos con salsa pomodoro</p>
-         </div>
-        </div>
-
-        <div class="contenedor">
-            <figure>
-        <img title="Antipasto" alt="La mejor seleccion de embutidos y quesos" src="../multimedia/entrada6antipasto.jpg" alt="Entrada6">
-        </figure>
-         <div class="contenido">
-            <h4>Antipasto</h4>
-            <p class="contecomida">La mejor seleccion de embutidos y quesos</p>
-         </div>
-        </div>
-        </div>
-
-
-        <h3 id="main-pastas">Pastas</h3>
-        <div class="main-pastas" >
-
-            <div class="contenedor">
-                <figure>
-        <img title="Spaghetti a la Bolognesa" alt="Fideos con salsa bolognesa, a base de tomate y carne picada" src="../multimedia/pasta1spagettibolo.jpg" alt="pastas1">
-         </figure>
-         <div class="contenido">
-            <h4>Spaghetti a la Bolognesa</h4>
-            <p class="contecomida">Fideos con salsa bolognesa, a base de tomate y carne picada</p>
-         </div>
-        </div>
-
-        <div class="contenedor">
-            <figure>
-        <img title="Sorrentinos a la manteca" alt="Sorrentinos con manteca, salvia y semillas" src="../multimedia/pasta2sorrentinos.jpg" alt="pastas2">
-         </figure>
-         <div class="contenido">
-            <h4>Sorrentinos a la manteca</h4>
-            <p class="contecomida">Sorrentinos con manteca, salvia y semillas</p>
-         </div>
-        </div>
-
-        <div class="contenedor">
-            <figure>
-        <img title="Ñoquis a la Parisiene" alt="Ñoquis con salsa crema, hongos, jamon y verdeo" src="../multimedia/pasta2ñoquisparis.jpg" alt="pastas3">
-         </figure>
-         <div class="contenido">
-            <h4>Ñoquis a la Parisiene</h4>
-            <p class="contecomida">Ñoquis con salsa crema, hongos, jamon y verdeo</p>
-         </div>
-        </div>
-
-        <div class="contenedor">
-            <figure>
-        <img title="Ravioles Scarparo" alt="Ravioles de ricotta con salsa scarparo mixta" src="../multimedia/pasta4raviolescarparo.jpg" alt="pastas4">
-         </figure>
-         <div class="contenido">
-            <h4>Ravioles Scarparo</h4>
-            <p class="contecomida">Ravioles de ricotta con salsa scarparo mixta</p>
-         </div>
-        </div>
-        </div>
-
-        <h3 id="main-carnes">Carnes</h3>
-        <div class="main-carnes" >
-
-            <div class="contenedor">
-                <figure>
-        <img title="Ossobuco" alt="Carne de ossobuco braseado por 3hs con guarnicion" src="../multimedia/carne1ossobuco.jpg" alt="carnes1">
-         </figure>
-         <div class="contenido">
-            <h4>Ossobuco</h4>
-            <p class="contecomida">Carne de ossobuco braseado por 3hs con guarnicion</p>
-         </div>
-        </div>
-
-        <div class="contenedor">
-            <figure>
-        <img title="Rissotto de Pollo" alt="Rissotto de Pollo cremoso con manteca y parmesano" src="../multimedia/carne2rissottopollo.jpg" alt="carnes2">
-         </figure>
-         <div class="contenido">
-            <h4>Rissotto de Pollo</h4>
-            <p class="contecomida">Rissotto de Pollo cremoso con manteca y parmesano</p>
-         </div>
-        </div>
-
-        <div class="contenedor">
-            <figure>
-        <img title="Bife a la Italiana" alt="Bifes de carne con pure especiado" src="../multimedia/carne3bifealaitaliana.jpg" alt="carnes3">
-         </figure>
-         <div class="contenido">
-            <h4>Bife a la Italiana</h4>
-            <p class="contecomida">Bifes de carne con pure especiado</p>
-         </div>
-        </div>
-
-        <div class="contenedor">
-            <figure>
-        <img title="Porchetta" alt="Carne de cerdo arrollada y marinada" src="../multimedia/carne4porchetta.jpg" alt="carnes4">
-         </figure>
-         <div class="contenido">
-            <h4>Porchetta</h4>
-            <p class="contecomida">Carne de cerdo arrollada y marinada</p>
-         </div>
-        </div>
-        </div>
-
-        <h3 id="main-postres">Postres</h3>
-        <div class="main-postres" >
-
-            <div class="contenedor">
-                <figure>
-        <img title="Pannacotta" alt="Postre a base de crema y vainilla" src="../multimedia/postre1pannacotta.jpg" alt="postres1">
-         </figure>
-         <div class="contenido">
-            <h4>Pannacotta</h4>
-            <p class="contecomida">Postre a base de crema y vainilla</p>
-         </div>
-        </div>
-
-        <div class="contenedor">
-            <figure>
-        <img title="Cannoli" alt="Cannoli relleno de crema pastelera y pistachos" src="../multimedia/postre2cannoli.jpg" alt="postres22">
-         </figure>
-         <div class="contenido">
-            <h4>Cannoli</h4>
-            <p class="contecomida">Cannoli relleno de crema pastelera y pistachos</p>
-         </div>
-        </div>
-
-        <div class="contenedor">
-            <figure>
-        <img title="Tiramisu" alt="Postre tiramisu a base de queso mascarpone y cafe" src="../multimedia/postre3tiramisu.jpg" alt="postres3">
-         </figure>
-         <div class="contenido">
-            <h4>Tiramisu</h4>
-            <p class="contecomida">Postre tiramisu a base de queso mascarpone y cafe</p>
-         </div>
-        </div>
-        </div>
-
-        <h3 id="main-bebidas">Bebidas</h3>
-        <div class="main-bebidas" >
-
-        <img title="Carta de bebidas" alt="Todas las bebidas con alcohol disponibles" src="../multimedia/bebidas.jpg" alt="bebidas">
-         
-        </div>
-
-    </main>
-     
-  
-   
-
-
-    <footer class="footer">
-      <div class="container">
-        <a href="https://www.instagram.com/rdonquijote/?hl=en"><i class="fa-brands fa-instagram"></i></a>
-        <h3>Instagram</h3>
-        <a href="https://www.facebook.com/rdonquijote/?locale=es_LA"><i class="fa-brands fa-facebook"></i></a>
-        <h3>Facebook</h3>
-      </div>
-      <div>
-      <h4>Todos los derechos reservado a Don Quijote srl</h4>
     </div>
-    <div class="map">
-      <iframe class="inframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6543.161367477437!2d-57.960999!3d-34.916971!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a333464119f2cd%3A0x593197e14a2ed5a8!2sRestaurante%20Don%20Quijote!5e0!3m2!1sen!2sar!4v1713497260785!5m2!1sen!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="grupo-2">
+        <small>&copy; 2024 <b>DQ</b> - Todos los Derechos Reservados.</small>
     </div>
- 
+  </footer>
+    
 
-    </footer>
-    </div>
+    <!--dependencias a Javascript imprescindibles para bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

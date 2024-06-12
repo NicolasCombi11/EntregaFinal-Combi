@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
    <meta charset="UTF-8">
-    <meta name="description" content="Restaurante Don Quijote, esitlo Italiano en la La Plata, Buenos Aires. Enfocado en la comida gourmet, de calidad y delicioso">
+   <!-- SEO -->
+    <meta name="description" content="Seccion para poder realizar reservas en el restaurante y tenes un lugar asegurado">
     <meta name="Keywords" content="restaurante, la plata, don quijote, restaurante don quijote, gastronomia, eventos, delivery">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="./css/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./multimedia/favicon.png">
+    <link rel="icon" type="image/png" href="../multimedia/favicon.png">
     <title>Restaurante Italiano Don Quijote</title>
     <!--dependencias a Javascript imprescindibles para bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -23,93 +23,117 @@
 </head>
 <body>
     <header>
+        <!-- Titulo -->
         <h1 class="animate__animated animate__fadeIn">Don Quijote</h1>
         <h2 class="animate__animated animate__zoomIn">Ristorante Italiano</h2>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Historia</a></li>
-                <li><a href="./menu.html">Menu</a></li>
-                <li><a href="./ubicacion.html">Ubicacion</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./reservas.html">Reservas</a></li>
-            </ul>
+        <!-- Barra de navegacion -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" class="navcolor">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link "  href="../index.html">Historia </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link "  href="./menu.html">Menu </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./ubicacion.html">Ubicacion </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contacto.html">Contacto </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./reservas.html">Reservas </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
     </header>
-    
-    <main id="reservas"> 
-    <h3 class="treserv">Reservas Online</h3>
-
-    <form class="formulario" action="procesar_form.php" method="post" enctype="text/plain">
-        
-        <p>
-            <label for="nombre" class="colocar_nombre">Nombre
-            </label>
-            <input type="text" class="form-control" id="exampleInputName1" placeholder="Escribe tu nombre">
-        </p>
-    
-        <p>
-            <label for="apellido" class="colocar_email">Apellido
-            </label>
-            <input type="text" class="form-control" id="exampleInputName1" placeholder="Escribe tu Apellido">
-        </p>
-
-        <p>
-            <label for="telefone" class="colocar_telefono">Teléfono
-            </label>
-            <input type="telefone" class="form-control" id="exampleInputTelefone1" placeholder="Escribe tu teléfono">
-        </p>	
-
-        <p>
-            <label for="cantidad de personas" class="colocar_personas">Cantidad de personas
-            </label>
-            <input type="text" class="form-control" id="exampleInputPersonas1" placeholder="Escribe solo numeros">
-        </p>
-
-        
-        <p>
-            <label for="Horario" class="colocar_horario">Horario
-            </label>
-            
-            <select type="text" class="form-control" id="exampleInputMotivo1">
-                    <option value="">20:00 hs</option>
-                    <option value="">20:30 hs</option>
-                    <option value="">21:00 hs</option>
-                    <option value="">21:30 hs</option>
-                    <option value="">22:00 hs</option>
-                </select>
-        </p>
-          <input type="date" name="day" class="btn btn-secondary" size="16" type="text" class="form-control" id="datetime" />
-        <p>
-        
-           </p>	  	
-
-           <button type="submit" class="btn btn-outline-danger">Enviar reserva</button>
-           <button type="reset" class="btn btn-outline-danger">Limpiar</button>
-
-    </form>
-    </main>
-
   
-    
-    
-
-
-    <footer class="footer">
-        <div class="container">
-          <a href="https://www.instagram.com/rdonquijote/?hl=en"><i class="fa-brands fa-instagram"></i></a>
-          <h3>Instagram</h3>
-          <a href="https://www.facebook.com/rdonquijote/?locale=es_LA"><i class="fa-brands fa-facebook"></i></a>
-          <h3>Facebook</h3>
-        </div>
-        <div>
-        <h4>Todos los derechos reservado a Don Quijote srl</h4>
+    <main id="reservas"> 
+          <div class="preserva">
+            <p>
+              ¡Haga su reserva ahora! Complete el formulario a continuación para asegurar su lugar. Nos pondremos en contacto a la brevedad para confirmar su reserva. ¡Esperamos verle pronto!
+            </p>
+          </div>
+        <!-- Formulario para reservas -->
+          <form class="rformulario" action="procesar_form.php" method="post" enctype="text/plain">
+            <div id="form-reservas" class="completar-reserva">
+               <label for="nombre" class="colocar_nombre">Nombre
+               </label>
+               <input type="text" class="form-control" id="exampleInputName1" placeholder="Escribe tu nombre">
+             </div>
+            <div id="form-reservas" class="completar-reserva">
+                <label for="apellido" class="colocar_apellido">Apellido
+                </label>
+                <input type="text" class="form-control" id="exampleInputName1" placeholder="Escribe tu Apellido">
+            </div>
+            <div id="form-reservas" class="completar-reserva">
+                <label for="telefone" class="colocar_telefono">Teléfono
+                </label>
+                <input type="telefone" class="form-control" id="exampleInputTelefone1" placeholder="Escribe tu teléfono">
+            </div>	
+            <div id="form-reservas" class="completar-reserva">
+                <label for="cantidad de personas" class="colocar_personas">Cantidad de personas
+                </label>
+                <input type="text" class="form-control" id="exampleInputPersonas1" placeholder="Escribe solo numeros">
+            </div>
+            <div id="form-reservas" class="completar-reserva">
+                <label for="Horario" class="colocar_horario">Horario
+                </label>
+        
+                <select type="text" class="form-control" id="exampleInputMotivo1">
+                        <option value="">20:00 hs</option>
+                        <option value="">20:30 hs</option>
+                        <option value="">21:00 hs</option>
+                        <option value="">21:30 hs</option>
+                        <option value="">22:00 hs</option>
+                    </select>
+            </div>
+            <div id="form-reservas" class="completar-reserva">
+                <input type="date" name="day" class="btn btn-secondary" size="16" type="text" class="form-control" id="datetime" />
+            </div>	  
+            <div id="form-reservas" class="completar-reserva">
+               <button type="submit" class="btn btn-danger">Enviar reserva</button>
+               <button type="reset" class="btn btn-danger">Limpiar</button>
+            </div>
+          </form>
+    </main>
+    <!-- Pie de pagina -->
+    <footer class="pie-pagina">
+      <div class="grupo-1">
+          <div class="box">
+              <figure>
+                  <a href="#">
+                      <img src="../multimedia/icon1.jpg" alt="Logo de SLee Dw">
+                  </a>
+              </figure>
+          </div>
+          <div class="box">
+              <h2>SOBRE NOSOTROS</h2>
+              <p>Somos un restaurante familiar creado por italianos hace 30 años.</p>
+              <p>Queres conocer los sabores tipicos de Italia? Estas en el lugar indicado.</p>
+          </div>
+          <div class="box">
+              <h2>SEGUINOS</h2>
+              <div class="red-social">
+                  <a href="https://www.facebook.com/rdonquijote/?locale=es_LA" class="fa-brands fa-facebook"></a>
+                  <a href="https://www.instagram.com/rdonquijote/?hl=en" class="fa-brands fa-instagram"></a>
+                  <a href="https://twitter.com/rdonquijote?lang=en" class="fa-brands  fa-twitter"></a>
+              </div>
+          </div>
       </div>
-      <div class="map">
-        <iframe class="inframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6543.161367477437!2d-57.960999!3d-34.916971!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a333464119f2cd%3A0x593197e14a2ed5a8!2sRestaurante%20Don%20Quijote!5e0!3m2!1sen!2sar!4v1713497260785!5m2!1sen!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="grupo-2">
+          <small>&copy; 2024 <b>DQ</b> - Todos los Derechos Reservados.</small>
       </div>
-    
+    </footer>
 
-      <!--dependencias a Javascript imprescindibles para bootstrap-->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <!--dependencias a Javascript imprescindibles para bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

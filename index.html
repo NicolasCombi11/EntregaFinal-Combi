@@ -1,78 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Restaurante Don Quijote, esitlo Italiano en la La Plata, Buenos Aires. Enfocado en la comida gourmet, de calidad y delicioso">
+    <!-- SEO -->
+    <meta name="description" content="Restaurante Don Quijote, pagina principal, historia del restaurante, imagenes sobre el local">
     <meta name="Keywords" content="restaurante, la plata, don quijote, restaurante don quijote, gastronomia, eventos, delivery">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="./css/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="./multimedia/favicon.png">
+    <!--dependencias a Javascript imprescindibles para bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Estilo de la pagina -->
+    <link rel="stylesheet" href="./css/estilo.css">
     <title>Restaurante Italiano Don Quijote</title>
 </head>
 <body>
-    <header>
-        <h1 class="animate__animated animate__fadeIn">Don Quijote</h1>
-        <h2 class="animate__animated animate__zoomIn">Ristorante Italiano</h2>
-        <nav class="menu">
-            <ul class="menu">
-                <li><a href="./index.html">Historia </a></li>
-                <li><a href="./pages/menu.html">Menu </a></li>
-                <li><a href="./pages/ubicacion.html">Ubicacion </a></li>
-                <li><a href="./pages/contacto.html">Contacto </a></li>
-                <li><a href="./pages/reservas.html">Reservas </a></li>
-            </ul>
-        </nav>
-    </header>
-   
-
-    <main id="main">
-        <section class="section1">
-            <h2>Bienvenidos</h2>
-            <p>
+       <header>
+        <!-- Titulo -->
+         <h1 class="animate__animated animate__fadeIn">Don Quijote</h1>
+         <h2 class="animate__animated animate__zoomIn">Ristorante Italiano</h2>
+         <!-- Barra de navegacion -->
+         <nav class="navbar navbar-expand-lg bg-body-tertiary" class="navcolor">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                    <a class="nav-link "  href="./index.html">Historia </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link "  href="./pages/menu.html">Menu </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/ubicacion.html">Ubicacion </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/contacto.html">Contacto </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/reservas.html">Reservas </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+       </header>
+       <!-- Historia del restaurante -->
+       <main id="main">
+       <h3>Bienvenidos</h3>
+       <div class="containerindex">
+            <div class="texto">
+              <p>
                 ¡Bienvenidos al restaurante Don Quijote en La Plata! Aquí, les invitamos a embarcarse en un viaje culinario inspirado en los sabores de la tierra de Cervantes. Desde las tapas más tradicionales hasta platos innovadores, cada bocado es una aventura gastronómica que honra la pasión y el ingenio del legendario caballero.
-            </p>
-            <div class="container">
-                <img title="Entrada al local" alt="Vista del local desde afuera" src="./multimedia/index1.jpg" alt="Restaurante1">
+              </p>
+              </div>
+             <div class="imagen">
+                <img title="Entrada al local" alt="Vista del local desde afuera" src="./multimedia/index1.jpg" >
             </div>       
-        </section>
-        <section class="section2">
+       
+            <div class="texto2">
             <p>
                 Ubicada en el corazón de La Plata, donde el restaurante Don Quijote fusiona la esencia italiana con la calidez platense. Sumérjanse en un oasis gastronómico donde cada plato cuenta una historia de amor por la cocina. Desde la pasta al dente hasta las carnes recién horneadas, cada bocado es un tributo a la tradición y la pasión culinaria. Déjense seducir por el encanto de este rincón italiano en el centro de la ciudad.
             </p>
-            <div class="container">
-                <img title="Interior del local" alt="Salon con mesas en el interior" src="./multimedia/index2.jpg" alt="Restaurante2">
+            </div>
+            <div class="imagen2">
+                <img title="Interior del local" alt="Salon con mesas en el interior" src="./multimedia/index2.jpg" >
             </div>  
-        </section>
-        <section class="section3">
+            <div class="texto3">
             <p>
                 Desde 1930, el restaurante Don Quijote ha sido un pilar en la comunidad platense, llevando consigo el legado de una familia italiana apasionada por la cocina. Cada receta es un tesoro transmitido de generación en generación, impregnando cada plato con el amor y la dedicación que solo una tradición arraigada puede ofrecer. Sumérjanse en la historia culinaria de una familia que ha convertido su hogar en un santuario para los amantes de la buena comida.
             </p>
-            <div class="container">
-                <img title="Exterior y mesas" alt="Local al paso y mesas al aire libre" src="./multimedia/index3.jpg" alt="Restaurante3">
             </div>
-        </section>
-    </main>
-    
-
-
-    <footer class="footer">
-        <div class="container">
-          <a class="insta" href="https://www.instagram.com/rdonquijote/?hl=en"><i class="fa-brands fa-instagram"></i></a>
-          <h3>Instagram</h3>
-          <a href="https://www.facebook.com/rdonquijote/?locale=es_LA"><i class="fa-brands fa-facebook"></i></a>
-          <h3 class="face">Facebook</h3>
+            <div class="imagen-3">
+                <img title="Exterior y mesas" alt="Local al paso y mesas al aire libre" src="./multimedia/index3.jpg" >
+            </div>
         </div>
-        <div>
-        <h4>Todos los derechos reservado a Don Quijote srl</h4>
+    </main>
+    <!-- Pie de pagina -->
+    <footer class="pie-pagina">
+      <div class="grupo-1">
+          <div class="box">
+              <figure>
+                  <a href="#">
+                      <img src="./multimedia/icon1.jpg" alt="Logo de SLee Dw">
+                  </a>
+              </figure>
+          </div>
+          <div class="box">
+              <h2>SOBRE NOSOTROS</h2>
+              <p>Somos un restaurante familiar creado por italianos hace 30 años.</p>
+              <p>Queres conocer los sabores tipicos de Italia? Estas en el lugar indicado.</p>
+          </div>
+          <div class="box">
+              <h2>SEGUINOS</h2>
+              <div class="red-social">
+                  <a href="https://www.facebook.com/rdonquijote/?locale=es_LA" class="fa-brands fa-facebook"></a>
+                  <a href="https://www.instagram.com/rdonquijote/?hl=en" class="fa-brands fa-instagram"></a>
+                  <a href="https://twitter.com/rdonquijote?lang=en" class="fa-brands  fa-twitter"></a>
+              </div>
+          </div>
       </div>
-      <div class="map">
-        <iframe class="inframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6543.161367477437!2d-57.960999!3d-34.916971!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a333464119f2cd%3A0x593197e14a2ed5a8!2sRestaurante%20Don%20Quijote!5e0!3m2!1sen!2sar!4v1713497260785!5m2!1sen!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="grupo-2">
+          <small>&copy; 2024 <b>DQ</b> - Todos los Derechos Reservados.</small>
       </div>
+    </footer>
+
+        <!--dependencias a Javascript imprescindibles para bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     
 </body>
 </html>

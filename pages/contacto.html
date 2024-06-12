@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Restaurante Don Quijote, esitlo Italiano en la La Plata, Buenos Aires. Enfocado en la comida gourmet, de calidad y delicioso">
+    <!-- SEO -->
+    <meta name="description" content="Seccion para contactar al restaurante ante cualquier consulta o reclamo">
     <meta name="Keywords" content="restaurante, la plata, don quijote, restaurante don quijote, gastronomia, eventos, delivery">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="./css/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./multimedia/favicon.png">
+    <link rel="icon" type="image/png" href="../multimedia/favicon.png">
     <title>Restaurante Italiano Don Quijote</title>
 
     <!--dependencias a Javascript imprescindibles para bootstrap-->
@@ -23,87 +23,104 @@
 </head>
 <body>
     <header>
+        <!-- Titulo -->
         <h1 class="animate__animated animate__fadeIn">Don Quijote</h1>
         <h2 class="animate__animated animate__zoomIn">Ristorante Italiano</h2>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Historia</a></li>
-                <li><a href="./menu.html">Menu</a></li>
-                <li><a href="./ubicacion.html">Ubicacion</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./reservas.html">Reservas</a></li>
-            </ul>
+        <!-- Barra de navegacion -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" class="navcolor">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link "  href="../index.html">Historia </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link "  href="./menu.html">Menu </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./ubicacion.html">Ubicacion </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contacto.html">Contacto </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./reservas.html">Reservas </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
     </header>
 
     <main id="contacto">
-    
+        <h3>Contacto</h3>
+        <div class="pcontacto">
+          <p>
+            ¡Bienvenidos a nuestra página de contacto! Estamos aquí para escuchar todas sus inquietudes y brindarles el mejor servicio posible. No duden en enviarnos sus mensajes, opiniones, reclamos y consultas. Valoramos mucho su feedback, ya que nos ayuda a mejorar continuamente. Ya sea que necesiten asistencia con un producto, quieran compartir sus ideas o tengan alguna queja, estamos disponibles para ayudarles. Por favor, utilicen el formulario a continuación para ponerse en contacto con nuestro equipo. Nos comprometemos a responder a la brevedad posible. ¡Gracias por comunicarse con nosotros!
+          </p>
+        </div>
+        <!-- Formulario de contacto -->
+        <form class="formulario" action="procesar_form.php" method="post" enctype="text/plain">
+           <div id="form-contacto" class="completar-contacto">
+               <label for="nombre" class="colocar_nombre">Nombre</label>
+               <input type="text" class="form-control" id="exampleInputName1">
+           </div>
+           <div id="form-contacto" class="completar-contacto">
+               <label for="email" class="colocar_email">Email</label>
+               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+           </div>        
+           <div id="form-contacto" class="completar-contacto">
+               <label for="motivo" class="colocar_motiv">Motivo</label>
+                   <select type="text" class="form-control" id="exampleInputMotivo1">
+                       <option value="">Consulta</option>
+                       <option value="">Reservas</option>
+                       <option value="">Reclamos</option>
+                       <option value="">Agradecimientos</option>
+                       <option value="">Eventos</option>   
+                   </select>            
+           </div>		
+           <div id="form-contacto" class="completar-contacto">
+               <label for="mensaje" class="colocar_mensaje">Mensaje</label>                     
+                    <textarea name="introducir_mensaje" type="password" class="form-control" id="exampleInputMensaje1" rows="10" cols="30" placeholder="Deja aquí tu mensaje..."></textarea> 
+            </div>	  	
 
-     <h3>Contacto</h3>
-
-     <form class="formulario" action="procesar_form.php" method="post" enctype="text/plain">
+           <button type="submit" class="btn btn-outline-danger">Enviar</button>
+           <button type="reset" class="btn btn-outline-danger">Limpiar</button>
         
-        <p>
-            <label for="nombre" class="colocar_nombre">Nombre</label>
-            <input type="text" class="form-control" id="exampleInputName1">
-        </p>
-
-        <p>
-            <label for="telefone" class="colocar_telefono">Teléfono</label>
-            <input type="telefone" class="form-control" id="exampleInputTelefone1">
-        </p>	
-    
-        <p>
-            <label for="email" class="colocar_email">Email</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        </p>
-
-        
-        <p>
-            <label for="motivo" class="colocar_motiv">Motivo</label>
-                <select type="text" class="form-control" id="exampleInputMotivo1">
-                    <option value="">Consulta</option>
-                    <option value="">Reservas</option>
-                    <option value="">Reclamos</option>
-                    <option value="">Agradecimientos</option>
-                    <option value="">Eventos</option>
-                    
-                </select>
-            
-        </p>		
-    
-        <p>
-            <label for="mensaje" class="colocar_mensaje">Mensaje</label>                     
-                 <textarea name="introducir_mensaje" type="password" class="form-control" id="exampleInputMensaje1" rows="5" cols="30" placeholder="Deja aquí tu mensaje..."></textarea> 
-           </p>	  	
-
-        <button type="submit" class="btn btn-outline-danger">Enviar</button>
-        <button type="reset" class="btn btn-outline-danger">Limpiar</button>
-        
-
      </form>
     </main>
-
-  
-
-
-
-    <footer class="footer">
-        <div class="container">
-          <a href="https://www.instagram.com/rdonquijote/?hl=en"><i class="fa-brands fa-instagram"></i></a>
-          <h3>Instagram</h3>
-          <a href="https://www.facebook.com/rdonquijote/?locale=es_LA"><i class="fa-brands fa-facebook"></i></a>
-          <h3>Facebook</h3>
-        </div>
-        <div>
-        <h4>Todos los derechos reservado a Don Quijote srl</h4>
+     <!-- Pie de pagina -->
+     <footer class="pie-pagina">
+      <div class="grupo-1">
+          <div class="box">
+              <figure>
+                  <a href="#">
+                      <img src="../multimedia/icon1.jpg" alt="Logo de SLee Dw">
+                  </a>
+              </figure>
+          </div>
+          <div class="box">
+              <h2>SOBRE NOSOTROS</h2>
+              <p>Somos un restaurante familiar creado por italianos hace 30 años.</p>
+              <p>Queres conocer los sabores tipicos de Italia? Estas en el lugar indicado.</p>
+          </div>
+          <div class="box">
+              <h2>SEGUINOS</h2>
+              <div class="red-social">
+                  <a href="https://www.facebook.com/rdonquijote/?locale=es_LA" class="fa-brands fa-facebook"></a>
+                  <a href="https://www.instagram.com/rdonquijote/?hl=en" class="fa-brands fa-instagram"></a>
+                  <a href="https://twitter.com/rdonquijote?lang=en" class="fa-brands  fa-twitter"></a>
+              </div>
+          </div>
       </div>
-      <div class="map">
-        <iframe class="inframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6543.161367477437!2d-57.960999!3d-34.916971!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a333464119f2cd%3A0x593197e14a2ed5a8!2sRestaurante%20Don%20Quijote!5e0!3m2!1sen!2sar!4v1713497260785!5m2!1sen!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="grupo-2">
+          <small>&copy; 2024 <b>DQ</b> - Todos los Derechos Reservados.</small>
       </div>
-    
-
-      <!--dependencias a Javascript imprescindibles para bootstrap-->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </footer>
+        <!--dependencias a Javascript imprescindibles para bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "_var";
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap');
+
+
+
+body {
+    background: rgb(234,232,232);
+    background: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+    background-image: url(../multimedia/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: helvetica, sans-serif;
+    font-style: italic;
+    h2 {
+        text-align: center; 
+        text-decoration: underline;
+    }
+    p { 
+        line-height: 1.5rem;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    .container a{
+        margin: 7px;
+        color: wheat;
+    }  
+    div h3{
+        text-decoration: underline;
+    
+        color: wheat;
+        
+    }   
+    .menucontenedor{
+        display: flex;
+        justify-content: center;
+        margin-top: 5rem;
+    }
+    .menuencabezado img{
+        height: 65vh;
+        width: 216vh;
+    }
+
+    @keyframes show {
+        from{
+            opacity: 0;
+            scale: 25%;
+        }
+        to {
+            opacity: 1;
+            scale: 100%;
+        }
+    }
+
+    .menucontenedor img{
+        view-timeline-name: --image ;
+        view-timeline-axis: block;
+        animation-timeline:  --image;
+        animation-name: show;
+        animation-range: entry 25% cover 50%;
+        animation-fill-mode: both;
+    }
+
+    
+
+}
+
+@media (max-width: 600px) {
+
+    .menucontenedor{
+        display: flex;
+        justify-content: center;
+        margin-top: 5rem;
+        img{
+        width: 550px;
+        max-height: 500px;
+        margin: auto;
+    }}
+
+    .menuencabezado img{
+        margin-top: 2rem;
+        max-height: 250px;
+        max-width: 600px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .menucontenedor {
+        display: flex;
+        justify-content: center;
+        margin-top: 5rem;
+    }
+    
+    .menucontenedor img {
+        width: 100%; 
+        max-width: 480px; 
+        max-height: 500px;
+        margin: auto;
+    }
+
+    .menuencabezado img {
+        margin-top: 2rem;
+        max-height: 250px;
+        max-width: 480px; 
+        width: 100%; 
+    }
+}
+

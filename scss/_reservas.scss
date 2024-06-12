@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "_var";
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap');
+
+
+
+
+body {
+    background: rgb(234,232,232);
+    background: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+    background-image: url(../multimedia/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: helvetica, sans-serif;
+    font-style: italic;
+    h2 {
+        text-align: center; 
+        text-decoration: underline;
+    }
+    p { 
+        line-height: 1.5rem;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    .container a{
+        margin: 7px;
+        color: wheat;
+    }  
+    div h3{
+        text-decoration: underline;
+    
+        color: wheat;
+        
+    }   
+    #reservas {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .preserva{
+        background-color: #f4dfc1;
+        margin: 6rem;
+    }
+    
+    .rformulario {
+        width: 600px;
+        margin: 1rem;
+        border: #e59f44 solid 2px;
+        padding: 60px;
+        text-align: center;
+        #form-reservas{
+            padding: 1rem;
+        }
+    }
+
+    
+
+}
+
+
+@media (max-width: 600px){
+
+    .rformulario{
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        max-width: 550px;
+        border: 0px;
+    }
+}
+
+@media (max-width: 4800px){
+
+    .rformulario{
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        max-width: 480px;
+        border: 0px;
+    }
+}
