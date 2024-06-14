@@ -319,7 +319,7 @@ body .menucontenedor {
 }
 body .menuencabezado img {
   height: 65vh;
-  width: 216vh;
+  width: 100%;
 }
 @keyframes show {
   from {
@@ -497,13 +497,14 @@ body .mainubi {
 }
 body .mainubi .ubiparrafo {
   background-color: beige;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 2.5rem;
   text-align: justify;
   padding: 3rem;
+  margin-top: 5%;
 }
 body .mainubi .mapaubi {
-  margin-top: 1.5rem;
+  margin-top: 5%;
 }
 body .sectionubi {
   display: flex;
@@ -625,6 +626,7 @@ body .pcontacto {
 }
 body .pcontacto p {
   line-height: 1.5;
+  font-size: 1.1rem;
 }
 
 @media (max-width: 600px) {
