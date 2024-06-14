@@ -70,40 +70,82 @@ body {
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+
+    body{
+        width: 100%;
+        h2{
+            margin: 1rem;
+        }
+    }
+    .headermenu{
+        height: 1.1rem;
+        width: 127vh;
+        h2{
+            margin: 1rem;
+        }
+        .mtitle{
+            transform: translateX(-10rem);
+        }
+        #navmenu{
+            width: 100%;
+            margin: 0;
+            transform: translateY(6rem);
+        }
+    }
 
     .menucontenedor{
         display: flex;
         justify-content: center;
-        margin-top: 5rem;
+        margin-top: 3rem;
+        width: auto;
         img{
-        width: 550px;
+        width: 100%;
         max-height: 500px;
         margin: auto;
+        .menu1{
+        margin-top:10%;
+        }
     }}
 
     .menuencabezado img{
         margin-top: 2rem;
         max-height: 250px;
-        max-width: 600px;
+        max-width: 100%;
     }
 }
 
 
 @media (max-width: 480px) {
+    
+    .headermenu{
+        height: 1.1rem;
+        width: auto;
+        h2{
+            margin: 1rem;
+            transform: translateY(5rem);
+        }
+        .mtitle{
+            transform: translateX(-10rem);
+        }
+        #navmenu{
+            top: 0;
+            z-index: 100%;
+        }
+    }    
     .menucontenedor {
         display: flex;
         justify-content: center;
         margin-top: 5rem;
+         img {
+            width: 100%; 
+            max-width: 480px; 
+            max-height: 500px;
+            margin: auto;
+            margin-top: 5rem;
+        }
     }
     
-    .menucontenedor img {
-        width: 100%; 
-        max-width: 480px; 
-        max-height: 500px;
-        margin: auto;
-    }
-
     .menuencabezado img {
         margin-top: 2rem;
         max-height: 250px;

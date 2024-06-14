@@ -7,8 +7,10 @@
 @import "_var";
 @import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap');
 
-
-
+@mixin border($margin, $padding){
+    margin: $margin;
+    padding: $padding;
+}
 
 body {
     background: rgb(234,232,232);
@@ -24,8 +26,7 @@ body {
     }
     p { 
         line-height: 1.5rem;
-        margin: 1rem;
-        padding: 1rem;
+        @include border(1rem, 1rem);
     }
     .container a{
         margin: 7px;
@@ -47,7 +48,6 @@ body {
         background-color: #f4dfc1;
         margin: 6rem;
     }
-    
     .rformulario {
         width: 600px;
         margin: 1rem;
@@ -56,15 +56,20 @@ body {
         text-align: center;
         #form-reservas{
             padding: 1rem;
-        }
+        }        
     }
-
-    
-
 }
 
 
-@media (max-width: 600px){
+@media (max-width: 800px){
+
+    header{
+        height: 100%;
+    nav{
+        transform: translateY(4rem);
+
+    }
+    }
 
     .rformulario{
         margin: 0px;
@@ -76,14 +81,22 @@ body {
     }
 }
 
-@media (max-width: 4800px){
+@media (max-width: 480px){
+
+    #reservas{
+        max-width: 100%;
+    }
+
+    .preserva{
+        width: 100%;
+        margin: 0;
+    }
 
     .rformulario{
-        margin: 0px;
         display: flex;
         flex-direction: column;
         text-align: center;
-        max-width: 480px;
-        border: 0px;
+        max-width: 95%;
+        
     }
 }

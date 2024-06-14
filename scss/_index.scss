@@ -107,7 +107,7 @@ body {
     .containerindex {
         display: flex;
         flex-wrap: wrap;
-        margin: 5rem;
+        margin: auto;
       }
       
       .imagen, .texto, .imagen2, .texto2, .imagen-3, .texto3 {
@@ -121,6 +121,7 @@ body {
         order: 1;
         background-color: #ffdfb6;
         padding-top: 5%;
+        padding-left: 3%;
       }
       
       .texto {
@@ -129,25 +130,26 @@ body {
         font-size: 1.3rem;
         font-weight: bold;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding-top: 5%;
       }
       
       .imagen2 {
+        @extend .imagen;
         order: 4;
         background-color: #ffdfb6;
       }
       
       .texto2 {
+        @extend .texto;
         order: 3;
-        background-color: #ffdfb6;
-        font-size: 1.3rem;
-        font-weight: bold;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
       }
       
       .imagen-3 {
+        @extend .imagen2;
         order: 5;
         text-align: center;
-        background-color: #ffdfb6;
+        padding-bottom: 10%;
       }
       
       .texto3 {
@@ -238,60 +240,50 @@ body {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     header h1 {
-        font-size: 10vh;
+        font-size: 15vh;
         transform: translateY(70px);
     }
 
     header h2 {
-        transform: translateY(50px);
+        transform: translateY(30px);
     }
+
+    #navmenuh{
+        width: 100%;
+        margin: 0;
+        transform: translateY(6rem);
+    }
+
+   body{
+    width: 100%;
+   }
 
     #main h3 {
         text-align: center;
-        transform: translateX(-60px);
-    }
-
-    body {
-        max-width: 100%; 
-        overflow-x: hidden; 
+        transform: translateX(0);
     }
 
     .containerindex {
-        display: flex;
-        flex-direction: column;
+        
+        padding: 0 1rem; 
+        text-align: center;
         justify-content: center;
-        margin: 0;
-        width: 100%; 
+        img{
+            max-width: 100%;
+            margin-top: 1rem;
+            height: 35vh;
+        }
+        div p{
+            width: 100%;
+            font-size: 1rem;
+            margin-top: 0;
+        }
     }
     
-    .containerindex div img {
-        width: 100%;
-    }
-
-    .texto {
-        order: 1;
-    }
-
-    .imagen {
-        order: 2;
-    }
-
-    .texto2 {
-        order: 3;
-    }
-
-    .imagen2 {
-        order: 4;
-    }
-
-    .texto3 {
-        order: 5;
-    }
-
-    .imagen-3 {
-        order: 6;
+    .texto, .imagen, .texto2, .imagen2, .texto3, .imagen-3 {
+        padding: 0.5rem;
     }
 
     .pie-pagina .grupo-1 {
@@ -299,5 +291,112 @@ body {
         grid-gap: 20px;
         padding: 20px 0px;
     }
+}
 
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 15vh;
+        transform: translateY(70px);
+    }
+
+    header h2 {
+        transform: translateY(30px);
+    }
+
+    .navbar {
+        transform: translateY(34rem);
+    }
+
+    body {
+        width: 100%;
+    }
+
+    #main h3 {
+        text-align: center;
+        transform: translateX(0);
+        margin-top: 5rem;
+    }
+
+    .containerindex {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .containerindex img {
+        max-width: 100%;
+        margin-top: 1rem;
+        height: 35vh;
+        padding: 5%;
+    }
+
+    .containerindex div p {
+        width: 100%;
+        font-size: 0.9rem;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    body .texto {
+        order: 1;
+        padding: 0.3rem;
+        max-width: 90%;
+        p{
+            text-align: center;
+            margin: 0;
+            width: 100%;
+        }
+    }
+
+    body .imagen {
+        order: 2;
+        padding: 5%;
+        max-width: 90%;
+        
+    }
+
+    body .texto2 {
+        order: 3;
+        padding: 0.1rem;
+        max-width: 90%;
+        p{
+            text-align: center;
+            margin: 0;
+            width: 100%;
+        }
+    }
+
+    body .imagen2 {
+        order: 4;
+        padding: 5%;
+        max-width: 90%;
+    }
+
+    body .texto3 {
+        order: 5;
+        padding: 0.1rem;
+        max-width: 90%;
+        p{
+            text-align: center;
+            margin: 0;
+            width: 100%;
+        }
+    }
+
+    body .imagen-3 {
+        order: 6;
+        padding: 5%;
+        max-width: 90%;
+    }
+
+    .pie-pagina .grupo-1 {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        padding: 20px 0px;
+    }
 }
