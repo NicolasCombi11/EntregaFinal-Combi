@@ -73,14 +73,14 @@ body {
 @media (max-width: 800px) {
 
     body{
-        width: 100%;
+        max-width: 100%;
         h2{
             margin: 1rem;
         }
     }
     .headermenu{
         height: 1.1rem;
-        width: 127vh;
+        width: 800px;
         h2{
             margin: 1rem;
         }
@@ -90,7 +90,6 @@ body {
         #navmenu{
             width: 100%;
             margin: 0;
-            transform: translateY(6rem);
         }
     }
 
@@ -123,7 +122,6 @@ body {
         width: auto;
         h2{
             margin: 1rem;
-            transform: translateY(5rem);
         }
         .mtitle{
             transform: translateX(-10rem);
