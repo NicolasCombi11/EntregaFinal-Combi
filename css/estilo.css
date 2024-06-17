@@ -24,7 +24,7 @@ header {
   background-size: cover;
   min-height: 50vh;
 }
-header nav {
+header .navmenuh {
   transform: translateY(4rem);
 }
 header h1 {
@@ -239,7 +239,6 @@ body .texto3 {
   #navmenuh {
     width: 100%;
     margin: 0;
-    transform: translateY(6rem);
   }
   body {
     width: 100%;
@@ -272,6 +271,11 @@ body .texto3 {
     padding: 20px 0px;
   }
 }
+@media (max-width: 800px) and (min-width: 481px) {
+  .navmenuh {
+    transform: translateY(3rem);
+  }
+}
 @media (max-width: 480px) {
   header h1 {
     font-size: 15vh;
@@ -280,8 +284,8 @@ body .texto3 {
   header h2 {
     transform: translateY(40px);
   }
-  #navmenuh {
-    transform: translateY(2rem);
+  .navmenuh {
+    transform: translateY(11vh);
   }
   body {
     width: 100%;
@@ -441,9 +445,8 @@ body .menucontenedor img {
   .headermenu .mtitle {
     transform: translateX(-10rem);
   }
-  .headermenu #navmenu {
-    width: 100%;
-    margin: 0;
+  .headermenu .mstitulo {
+    transform: translateY(4rem);
   }
   .menucontenedor {
     display: flex;
@@ -465,6 +468,27 @@ body .menucontenedor img {
     max-width: 100%;
   }
 }
+@media (max-width: 800px) and (min-width: 481px) {
+  .navmenu {
+    width: 100%;
+    margin: 0;
+    top: 0;
+    z-index: 100%;
+    transform: translateY(5rem);
+  }
+  .menucontenedor {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+  }
+  .menucontenedor img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 500px;
+    margin: auto;
+    margin-top: 9rem;
+  }
+}
 @media (max-width: 480px) {
   .headermenu {
     height: 1.1rem;
@@ -476,9 +500,10 @@ body .menucontenedor img {
   .headermenu .mtitle {
     transform: translateX(-10rem);
   }
-  .headermenu #navmenu {
+  .headermenu .navmenu {
     top: 0;
     z-index: 100%;
+    transform: translateY(5rem);
   }
   .menucontenedor {
     display: flex;
@@ -487,7 +512,7 @@ body .menucontenedor img {
   }
   .menucontenedor img {
     width: 100%;
-    max-width: 480px;
+    max-width: auto;
     max-height: 500px;
     margin: auto;
     margin-top: 5rem;
@@ -495,7 +520,7 @@ body .menucontenedor img {
   .menuencabezado img {
     margin-top: 2rem;
     max-height: 250px;
-    max-width: 480px;
+    max-width: auto;
     width: 100%;
   }
 }
@@ -556,9 +581,6 @@ body .rformulario #form-reservas {
   header {
     height: 100%;
   }
-  header nav {
-    transform: translateY(4rem);
-  }
   .rformulario {
     margin: 0px;
     display: flex;
@@ -568,7 +590,18 @@ body .rformulario #form-reservas {
     border: 0px;
   }
 }
+@media (max-width: 800px) and (min-width: 481px) {
+  .navcolor {
+    transform: translateY(5rem);
+  }
+  .titulo2 {
+    transform: translateY(3rem);
+  }
+}
 @media (max-width: 480px) {
+  .navcolor {
+    transform: translateY(5rem);
+  }
   #reservas {
     max-width: 100%;
   }
@@ -618,7 +651,7 @@ body div h3 {
 body .tbody {
   display: flex;
   text-align: center;
-  transform: translateX(41rem);
+  transform: translateX(5rem);
   text-decoration: underline;
   margin-top: 6rem;
   font-size: 2rem;
@@ -664,12 +697,6 @@ body .sectionubi img:hover {
   body {
     display: flex;
   }
-  body .navbar {
-    transform: translateY(2rem);
-  }
-  body .tbody {
-    transform: translateX(13rem);
-  }
   body .mainubi {
     flex-direction: column;
     margin-left: 14%;
@@ -691,12 +718,23 @@ body .sectionubi img:hover {
     justify-content: center;
   }
 }
+@media (max-width: 800px) and (min-width: 481px) {
+  body {
+    display: flex;
+  }
+  body .navcolors {
+    transform: translateY(2rem);
+  }
+  body .tbody {
+    transform: translateX(10rem);
+  }
+}
 @media (max-width: 480px) {
   body {
     display: flex;
   }
-  .tbody {
-    transform: translateX(0);
+  body .navcolors {
+    transform: translateY(2rem);
   }
   .mainubi {
     flex-direction: column;
@@ -809,13 +847,18 @@ body .pcontacto p {
     text-align: center;
   }
 }
+@media (max-width: 800px) and (min-width: 481px) {
+  .navcolor2 {
+    transform: translateY(5rem);
+  }
+}
 @media (max-width: 480px) {
   header {
     background-position: center;
     max-height: 10%;
   }
-  .navbar {
-    transform: translateY(20%);
+  .navcolor2 {
+    transform: translateY(4rem);
   }
   #contacto {
     width: 96%;

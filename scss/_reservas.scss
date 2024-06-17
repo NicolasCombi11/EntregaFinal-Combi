@@ -65,10 +65,7 @@ body {
 
     header{
         height: 100%;
-    nav{
-        transform: translateY(4rem);
-
-    }
+       
     }
 
     .rformulario{
@@ -81,9 +78,21 @@ body {
     }
 }
 
-@media (max-width: 480px){
+@media (max-width: 800px) and (min-width:481px){
+    .navcolor{
+        transform: translateY(5rem);
 
-    
+    }
+    .titulo2{
+        transform: translateY(3rem);
+    }
+}
+
+@media (max-width: 480px){
+     .navcolor{
+        transform: translateY(5rem);
+
+    }
 
     #reservas{
         max-width: 100%;

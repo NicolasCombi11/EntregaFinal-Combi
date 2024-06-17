@@ -110,6 +110,11 @@ body {
     }
 }
 
+@media (max-width: 800px) and (min-width:481px){
+    .navcolor2 {
+        transform: translateY(5rem);
+   }
+}
 
 @media (max-width: 480px) {
     header {
@@ -117,8 +122,8 @@ body {
         max-height: 10%;
     }
 
-    .navbar {
-         transform: translateY(20%);
+    .navcolor2 {
+         transform: translateY(4rem);
     }
 
     #contacto {

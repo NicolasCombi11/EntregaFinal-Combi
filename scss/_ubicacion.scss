@@ -12,6 +12,7 @@ header{
     h4{
         text-align: center;
     }
+    
 }
 
 body {
@@ -36,7 +37,7 @@ body {
     .tbody{
         display: flex;
         text-align: center;
-        transform: translateX(41rem);
+        transform: translateX(5rem);
         text-decoration: underline;
         margin-top: 6rem;
         font-size: 2rem;
@@ -87,17 +88,14 @@ body {
    
     body{
         display: flex;
-        .navbar {
-            transform: translateY(2rem);
-        }
-        .tbody{
-            transform: translateX(13rem);
-        }
+        
+        
         .mainubi{
             flex-direction: column;
             margin-left: 14%;
         }
     }
+    
     .ubiparrafo{
             display: flex;
             flex-direction: column;
@@ -117,15 +115,27 @@ body {
     }    
 }
 
+@media (max-width: 800px) and (min-width:481px){
+    body{
+        display: flex;
+        .navcolors {
+            transform: translateY(2rem);
+        }
+        .tbody{
+            transform: translateX(10rem);
+        }
+}}
+
 @media (max-width: 480px) {
     
     body {
         display: flex;
+        .navcolors {
+            transform: translateY(2rem);
+        }
     }
 
-    .tbody {
-        transform: translateX(0); 
-    }
+   
 
     .mainubi {
         flex-direction: column;
